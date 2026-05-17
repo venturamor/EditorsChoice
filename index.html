@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
                alt="Entity Rubrics evaluation scheme"
                style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
           <figcaption class="content has-text-justified" style="margin-top: 1rem;">
-             Breaking down complex abstract intents into atomic, entity-level assessments for precise and verifiable evaluation.
+             Breaking down complex abstract intents into atomic, entity-level assessments for precise and verifiable evaluation. Overview of the three-stage VLM-based ENTITY-RUBRICS evaluation framework. (A) Entity Detection identifies relevant entities. (B) Entity Ranking assigns an expected transformation to each entity (Change, Optional, Preserve) and measures its execution alignment in the edited image. (C) Final Scoring aggregates these into a global rank and rationale. Results are visualized directly on-image via a red (incorrect) to green (correct) scale.
           </figcaption>
       </figure>
     </div>
@@ -408,7 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <h2 class="title is-3">Human Intent Mapping in Image Editing</h2>
       <figure style="margin-top: 2rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
           <img src="static/images/intent_types_horizontal-1.png"
-               alt="Sunburst chart of abstract editing taxonomy"
+               alt="Human-Intents"
                style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
           <figcaption class="content has-text-justified" style="margin-top: 1rem;">
              A structured categorization mapping the wide landscape of human abstract communication.
@@ -429,7 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
                alt="Dataset generation pipeline"
                style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
           <figcaption class="content has-text-justified" style="margin-top: 1rem;">
-             A scalable pipeline for generating diverse, real-world scenes specifically tailored for evaluating abstract image editing.
+             The ABSTRACTEDIT Automatic Curation Pipeline. (A) Sourcing: Context images (Azure) from OpenImages are compiled alongside manual category examples (Purple) and diverse personas (Blue). (B) Instruction Generation: After filtering the images for category relevancy, an LLM, prompted by few-shot examples and a random persona, generates paired abstract and explicit instructions (Beige). (C) Editing: Both instructions are applied to the context image to produce the final edited pairs (Yellow). Bottom: A generated ABSTRACTEDIT example.
           </figcaption>
       </figure>
     </div>
@@ -447,7 +447,25 @@ document.addEventListener('DOMContentLoaded', () => {
                alt="Sunburst chart of abstract editing taxonomy"
                style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
           <figcaption class="content has-text-justified" style="margin-top: 1rem;">
-             A structured categorization mapping the wide landscape of human abstract communication.
+             Taxonomy of Image Editing Intent. We formalize intent across two orthogonal axes: Identification (“what to edit”) and Specificity (“how to edit”). Intent is categorized based on the mapping between these axes: Explicit and Implicit editing provide a one-to-one mapping through high consensus on both axes, whereas abstract editing introduces a one-to-many relationship.
+          </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section hero">
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Main Results</h2>
+      <figure style="margin-top: 2rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+          <img src="static/images/results.png"
+               alt="Sunburst chart of abstract editing taxonomy"
+               style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
+          <figcaption class="content has-text-justified" style="margin-top: 1rem;">
+            Abstract Instruction Following Performance. Left Table: Open-Source, OS with thinking modes, and closed models ranked by Abstract ENTITY-RUBRICS scores and human annotations.Failure Profile: (Under-Editing) ← | → Over-editing. Domains: Emotional, Logical, Physical, andSocial. Right Fig. 5: Prompt Type Comparison: Explicit (blue) and Abs. (striped bordeaux).
           </figcaption>
       </figure>
     </div>
