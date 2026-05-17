@@ -387,6 +387,24 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="container is-max-desktop">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
+      <h2 class="title is-3">Human Intent Mapping in Image Editing</h2>
+      <figure style="margin-top: 2rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+          <img src="static/images/intent_types_horizontal-1.png"
+               alt="Human-Intents"
+               style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
+          <figcaption class="content has-text-justified" style="margin-top: 1rem;">
+             Taxonomy of Image Editing Intent. We formalize intent across two orthogonal axes: Identification (“what to edit”) and Specificity (“how to edit”). Intent is categorized based on the mapping between these axes: Explicit and Implicit editing provide a one-to-one mapping through high consensus on both axes, whereas abstract editing introduces a one-to-many relationship.
+          </figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section hero">
+<div class="container is-max-desktop">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
       <h2 class="title is-3">Entity-Rubrics Evaluation</h2>
       <figure style="margin-top: 2rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
           <img src="static/images/entity_rubrics_eval_scheme6-1.png"
@@ -401,23 +419,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 </section>
 
-<section class="section hero">
-<div class="container is-max-desktop">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3">Human Intent Mapping in Image Editing</h2>
-      <figure style="margin-top: 2rem; margin-bottom: 2rem; max-width: 900px; margin-left: auto; margin-right: auto;">
-          <img src="static/images/intent_types_horizontal-1.png"
-               alt="Human-Intents"
-               style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
-          <figcaption class="content has-text-justified" style="margin-top: 1rem;">
-             A structured categorization mapping the wide landscape of human abstract communication.
-          </figcaption>
-      </figure>
-    </div>
-  </div>
-</div>
-</section>
 
 <section class="section hero">
 <div class="container is-max-desktop">
@@ -447,7 +448,7 @@ document.addEventListener('DOMContentLoaded', () => {
                alt="Sunburst chart of abstract editing taxonomy"
                style="width: 100%; height: auto; display: block; border: 1px solid #ddd;">
           <figcaption class="content has-text-justified" style="margin-top: 1rem;">
-             Taxonomy of Image Editing Intent. We formalize intent across two orthogonal axes: Identification (“what to edit”) and Specificity (“how to edit”). Intent is categorized based on the mapping between these axes: Explicit and Implicit editing provide a one-to-one mapping through high consensus on both axes, whereas abstract editing introduces a one-to-many relationship.
+            Composition and Evaluation of the ABSTRACTEDIT Benchmark. The composition of the ABSTRACTEDIT benchmark is illustrated across four primary domains and 12 subcategories in the middle panel. Surrounding this distribution are representative samples from each domain, featuring context images paired with candidate edits produced by various models. Each output is overlaid with our ENTITY-RUBRICS automatic granular evaluation, providing a visual layout of performance that ranges from red (incorrect) to green (correct) at the entity level.
           </figcaption>
       </figure>
     </div>
